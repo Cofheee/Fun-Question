@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fun Question Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background: #f0f8ff;
+    }
+
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background: #005f99;
+    }
+
+    .question {
+      margin-top: 50px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      margin: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .yes {
+      background: #28a745;
+      color: white;
+    }
+
+    .no {
+      background: #dc3545;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <!-- Link to the question page -->
+  <a href="#question">Click Me!</a>
+
+  <!-- Question Section -->
+  <div id="question" class="question">
+      Are you Mad? Do you not Love me anymore?
+      <br><br>
+      <button class="btn yes" onclick="alert('Yay! Hindi na galit ang Bebu ko!')">Yes</button>
+      <button class="btn no" id="noBtn">No</button>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("mouseover", () => {
+      // Move the button randomly when hovered
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    });
+  </script>
+</body>
+</html>
