@@ -65,16 +65,17 @@
   </div>
 
   <script>
-    const noBtn = document.getElementById("yesBtn");
+    const yesBtn = document.getElementById("yesBtn");
 
-    noBtn.addEventListener("mouseover", () => {
+    yesBtn.addEventListener("mouseover", () => {
       // Move the button randomly when hovered
       const x = Math.floor(Math.random() * (window.innerWidth - 100));
       const y = Math.floor(Math.random() * (window.innerHeight - 100));
-      noBtn.style.left = x + "px";
-      noBtn.style.top = y + "px";
+      yesBtn.style.left = x + "px";
+      yesBtn.style.top = y + "px";
     });
   </script>
 </body>
 </html>
+
 
