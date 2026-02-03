@@ -60,12 +60,12 @@
   <div id="question" class="question">
       Are you Mad? Do you not Love me anymore?
       <br><br>
-      <button class="btn yes" onclick="alert('Yay! Hindi na galit ang Bebu ko!')">Yes</button>
-      <button class="btn no" id="noBtn">No</button>
+      <button class="btn yes" id="yesBtn">Yes</button>
+    <button class="btn no" onclick="alert('Yay! Hindi na galit ang Bebu ko!')">No</button>
   </div>
 
   <script>
-    const noBtn = document.getElementById("noBtn");
+    const noBtn = document.getElementById("yesBtn");
 
     noBtn.addEventListener("mouseover", () => {
       // Move the button randomly when hovered
